@@ -3349,3 +3349,72 @@ footer .footer-akatsuki-link a:hover {
 @media (max-width: 720px) {
   .contact-page { padding: 120px 16px 80px; }
 }
+
+/* ===== 実施場所カード内：DAY × 場所テーブル ===== */
+.req-venue-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 18px;
+  font-family: var(--font-ja);
+  font-size: 13px;
+}
+.req-venue-table thead th {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-en);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  padding: 8px 10px;
+  text-align: left;
+  border: 1px solid var(--black);
+}
+.req-venue-table tbody td {
+  padding: 10px 10px;
+  border: 1px solid var(--gray-border);
+  vertical-align: middle;
+  color: var(--text);
+}
+.req-venue-table tbody td:first-child {
+  font-family: var(--font-en);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  width: 70px;
+  background: rgba(31,111,212,0.04);
+  color: var(--dc-blue);
+}
+.req-venue-table tbody td:nth-child(2) {
+  font-family: var(--font-en);
+  font-weight: 600;
+  white-space: nowrap;
+  width: 130px;
+  color: var(--text);
+}
+.req-venue-table tbody td:nth-child(3) {
+  font-weight: 500;
+}
+.req-venue-table tbody tr:hover td:not(:first-child) {
+  background: rgba(31,111,212,0.04);
+}
+
+.req-venue-addr-list {
+  margin: 6px 0 14px;
+  padding: 14px 16px;
+  background: var(--bg-base);
+  border-left: 2px solid var(--dc-blue);
+  font-size: 13px;
+  line-height: 1.9;
+}
+.req-venue-addr-list p { margin: 0; }
+.req-venue-addr-list strong {
+  color: var(--black);
+  font-weight: 800;
+  margin-right: 4px;
+}
+
+@media (max-width: 540px) {
+  .req-venue-table tbody td:first-child { width: 56px; font-size: 11px; }
+  .req-venue-table tbody td:nth-child(2) { width: 90px; font-size: 11px; white-space: normal; }
+  .req-venue-table tbody td { padding: 8px 6px; font-size: 12px; }
+  .req-venue-addr-list { padding: 10px 12px; font-size: 12px; }
+}
