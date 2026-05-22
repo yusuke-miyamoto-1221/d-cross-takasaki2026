@@ -7,10 +7,14 @@
   <meta name="description" content="D-CROSS TAKASAKI 2026 エントリーページ">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@500;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
 
 <!-- HEADER -->
 <header>
@@ -22,8 +26,11 @@
     <nav>
       <ul>
         <li><a href="index.html#program">PROGRAM</a></li>
+        <li><a href="index.html#concept">CONCEPT</a></li>
+        <li><a href="index.html#facilities">FACILITIES</a></li>
         <li><a href="index.html#schedule">SCHEDULE</a></li>
         <li><a href="index.html#consortium">CONSORTIUM</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
@@ -35,8 +42,11 @@
 <div class="mobile-nav" id="mobileNav">
   <ul>
     <li><a href="index.html#program">PROGRAM</a></li>
+    <li><a href="index.html#concept">CONCEPT</a></li>
+    <li><a href="index.html#facilities">FACILITIES</a></li>
     <li><a href="index.html#schedule">SCHEDULE</a></li>
     <li><a href="index.html#consortium">CONSORTIUM</a></li>
+    <li><a href="index.html#faq">FAQ</a></li>
     <li><a href="contact.html">CONTACT</a></li>
   </ul>
   <div class="mobile-nav-cta">
@@ -53,7 +63,7 @@
     </div>
     <div class="entry-prep-box">
       <p class="entry-prep-label">準備中</p>
-      <p class="entry-prep-text">エントリー受付は <strong>2026年●月</strong> 開始予定です。<br>1次募集締切：2026年7月3日（金）12:00<br>詳細が決まり次第、こちらのページでご案内いたします。</p>
+      <p class="entry-prep-text">エントリー受付は <strong>2026年6月</strong> 開始予定です。<br>1次募集締切：<strong>2026年7月10日（金）12:00</strong><br>詳細が決まり次第、こちらのページでご案内いたします。</p>
       <a href="index.html" class="entry-back-btn">トップへ戻る</a>
     </div>
   </div>
@@ -67,6 +77,7 @@
       <p class="footer-office-name">D-CROSS TAKASAKI プログラム事務局</p>
       <p class="footer-office-label">〈 補助事業者 〉NTT東日本株式会社 埼玉事業部 群馬支店<br>〈 事務局支援 〉株式会社NTT DXパートナー</p>
       <p class="footer-office-mail">Mail：<a href="mailto:xxxxxxxx@east.ntt.co.jp">xxxxxxxx@east.ntt.co.jp</a></p>
+      <p class="footer-office-link">お問い合わせは <a href="contact.html">CONTACT</a> ページよりお願いいたします。</p>
       <p class="footer-office-link">連携協定：<a href="https://www.tcue.ac.jp/" target="_blank" rel="noopener">公立大学法人 高崎経済大学</a></p>
     </div>
     <div class="footer-brand">
@@ -83,6 +94,7 @@
 </footer>
 
 <script>
+// nav toggle
 var toggle = document.getElementById('navToggle');
 var mobileNav = document.getElementById('mobileNav');
 toggle.addEventListener('click', function() {
@@ -95,6 +107,30 @@ mobileNav.querySelectorAll('a').forEach(function(a) {
     mobileNav.classList.remove('open');
   });
 });
+
+// custom cursor (dot + lerp ring)
+(function() {
+  var dot = document.getElementById('cursorDot');
+  var ring = document.getElementById('cursorRing');
+  if (!dot || !ring) return;
+  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  var mx = window.innerWidth / 2, my = window.innerHeight / 2, rx = mx, ry = my;
+  window.addEventListener('mousemove', function(e) {
+    mx = e.clientX; my = e.clientY;
+    dot.style.transform = 'translate(' + mx + 'px, ' + my + 'px) translate(-50%, -50%)';
+  });
+  function animate() {
+    rx += (mx - rx) * 0.18; ry += (my - ry) * 0.18;
+    ring.style.transform = 'translate(' + rx + 'px, ' + ry + 'px) translate(-50%, -50%)';
+    requestAnimationFrame(animate);
+  }
+  animate();
+  var hoverables = 'a, button, input, textarea, select, label, [role="button"]';
+  document.querySelectorAll(hoverables).forEach(function(el) {
+    el.addEventListener('mouseenter', function() { dot.classList.add('hover'); ring.classList.add('hover'); });
+    el.addEventListener('mouseleave', function() { dot.classList.remove('hover'); ring.classList.remove('hover'); });
+  });
+})();
 </script>
 
 </body>
