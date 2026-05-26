@@ -3745,10 +3745,4 @@ footer .footer-akatsuki-link a:hover {
 .pm-photo img {
   object-position: center top;
 }
-/* 長谷川: もう少しズーム＋もう少し右寄せ */
-.pm-card[data-pm="hasegawa"] .pm-photo img,
-.pm-modal-photo[data-pm="hasegawa"] img {
-  transform: scale(0.96);
-  transform-origin: 75% 28%;
-  object-position: center 28%;
-}
+/* 長谷川: 新写真は構図が良好のため標準表示（特別な scale なし） */
