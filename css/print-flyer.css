@@ -1368,32 +1368,28 @@ img { max-width: 100%; display: block; }
 /* === FLYER FRONT REFINE: TOP-BAND中央寄せ・HERO拡大・ENTRY下寄せ === */
 /* ============================================================ */
 
-/* TOP BAND: ×削除に伴い中央寄せ、余白も整える */
+/* TOP BAND: 中央寄せ、padding（=幅・高さ）は維持しテキストのみ拡大 */
 .top-band {
   justify-content: center;
   gap: 0;
   padding: 4mm 9mm;
 }
 .top-band-text {
-  font-size: 10pt;
+  font-size: 13pt;
+  font-weight: 800;
   letter-spacing: 0.12em;
   text-align: center;
 }
 
-/* HERO: 拡大（entry-blockを下に押し下げた分のスペースを使う） */
+/* HERO: 拡大（entry-blockを下に押し下げた分のスペースを使う）— キャッチを上寄り */
 .hero {
   min-height: 130mm !important;
-  padding-top: 14mm !important;
+  padding-top: 8mm !important;
   padding-bottom: 10mm !important;
 }
 .hero-catch { font-size: 34pt !important; margin-bottom: 7mm !important; }
 .hero-logo-img { max-width: 92mm !important; }
 .hero-tagline { font-size: 11pt !important; }
-.hero-meaning {
-  margin-top: 6mm !important;
-  font-size: 8pt !important;
-  padding: 2.5mm 4mm !important;
-}
 
 /* ENTRY BLOCK: フッター付近へ押し下げ */
 .entry-block {
