@@ -1207,3 +1207,36 @@ img { max-width: 100%; display: block; }
 
 /* page-back の最後 (BIG CTA) を確実にページ内に収める */
 .page-back > *:last-child { margin-bottom: 6mm; }
+
+/* QUALIFY block (back page バージョン): 全幅、QRはBIG CTA側 */
+.qualify-block--back {
+  display: block;
+  grid-template-columns: unset;
+  padding: 0;
+  margin: 0 0 3mm;
+}
+.qualify-block--back .qualify-text {
+  padding: 3mm 4mm;
+  border: 1px solid var(--gray-border);
+  background: var(--white);
+}
+.qualify-block--back .qualify-head {
+  margin-bottom: 2mm;
+}
+.qualify-block--back .qualify-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5mm 5mm;
+  margin: 0;
+}
+.qualify-block--back .qualify-list li {
+  font-size: 8pt;
+  line-height: 1.5;
+  padding: 0;
+  border: none;
+}
+.qualify-block--back .qualify-note {
+  margin-top: 2mm;
+  font-size: 7.5pt;
+  color: var(--text-light);
+}
