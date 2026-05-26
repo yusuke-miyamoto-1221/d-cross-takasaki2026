@@ -1243,13 +1243,14 @@ img { max-width: 100%; display: block; }
 /* ============================================================ */
 .schedule-head {
   font-family: var(--font-ja);
-  font-size: 11pt;
+  font-size: 12pt;
   font-weight: 800;
   color: var(--black);
-  margin: 0 0 3mm;
+  margin: 0 0 2mm;
   letter-spacing: 0.06em;
-  padding-bottom: 2mm;
-  border-bottom: 1.5pt solid var(--black);
+  padding-bottom: 1.5mm;
+  border-bottom: 2px solid var(--dc-blue);
+  display: inline-block;
 }
 .schedule-phases {
   display: grid;
@@ -1328,6 +1329,91 @@ img { max-width: 100%; display: block; }
   color: var(--text-light);
   font-weight: 500;
   margin: 0 0 3mm;
+  letter-spacing: 0.02em;
+}
+
+/* ============================================================ */
+/* === FAQ 抜粋（裏面・応募資格とフッターの間） === */
+/* ============================================================ */
+.faq-flyer {
+  margin: 0 0 3mm;
+}
+.faq-flyer-head {
+  font-family: var(--font-ja);
+  font-size: 11pt;
+  font-weight: 800;
+  color: var(--black);
+  margin: 0 0 2mm;
+  padding-bottom: 1.5mm;
+  border-bottom: 2px solid var(--dc-blue);
+  display: inline-block;
+  letter-spacing: 0.04em;
+}
+.faq-flyer-list {
+  margin: 0;
+  padding: 0;
+}
+.faq-flyer-item {
+  padding: 1.5mm 0;
+  border-bottom: 1px dashed var(--gray-border);
+}
+.faq-flyer-item:last-child { border-bottom: none; }
+.faq-flyer-item dt {
+  display: flex;
+  gap: 2mm;
+  align-items: baseline;
+  font-family: var(--font-ja);
+  font-size: 8.5pt;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.faq-flyer-item dd {
+  display: flex;
+  gap: 2mm;
+  align-items: baseline;
+  margin: 1mm 0 0;
+  font-family: var(--font-ja);
+  font-size: 8pt;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.55;
+  letter-spacing: 0.02em;
+}
+.faq-flyer-item .faq-q {
+  flex-shrink: 0;
+  display: inline-block;
+  width: 5mm;
+  height: 5mm;
+  line-height: 5mm;
+  text-align: center;
+  background: var(--dc-blue);
+  color: var(--white);
+  font-family: var(--font-en);
+  font-size: 7.5pt;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+.faq-flyer-item .faq-a {
+  flex-shrink: 0;
+  display: inline-block;
+  width: 5mm;
+  height: 5mm;
+  line-height: 5mm;
+  text-align: center;
+  background: var(--dc-magenta);
+  color: var(--white);
+  font-family: var(--font-en);
+  font-size: 7.5pt;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+.faq-flyer-note {
+  font-size: 7pt;
+  color: var(--text-light);
+  font-weight: 500;
+  margin: 2mm 0 0;
   letter-spacing: 0.02em;
 }
 
