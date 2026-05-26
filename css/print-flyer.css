@@ -1162,3 +1162,48 @@ img { max-width: 100%; display: block; }
     color-adjust: exact !important;
   }
 }
+
+/* ============================================================ */
+/* === PAGE FIT OVERRIDES (両ページ A4 297mm に収める圧縮) === */
+/* ============================================================ */
+
+/* --- PAGE FRONT 圧縮 --- */
+.hero { padding: 9mm 12mm 4mm; min-height: 92mm; }
+.hero-text { gap: 3mm; }
+.hero-catch { font-size: 30pt; margin-bottom: 4mm; }
+.hero-logo-wrap { margin: 3mm 0 2mm; }
+.hero-logo-img { max-width: 78mm; }
+.hero-tagline { font-size: 10pt; line-height: 1.7; }
+.hero-meaning {
+  margin: 3mm 0 0 8mm;
+  padding: 2mm 3mm;
+  font-size: 7.5pt;
+  line-height: 1.55;
+}
+.keymsg { margin: 3mm 10mm 3mm; }
+.keymsg-inner { padding: 3mm 5mm; }
+.entry-block { margin: 0 10mm 3mm; }
+.qualify-block { margin-bottom: 3mm; }
+.hosts-band { /* margin-top: auto は維持 */ }
+.hosts-inner { padding: 4mm 10mm 3mm; }
+.footer-meta { padding: 2.5mm 10mm 3mm; }
+.footer-meta .footer-akatsuki img { max-height: 6mm; }
+.footer-doc-no { font-size: 6pt; }
+
+/* --- PAGE BACK 圧縮 --- */
+.page-back { padding: 7mm 10mm 0; }
+.back-heading { margin-bottom: 3mm; }
+.back-lead { margin-bottom: 3mm; }
+.back-desc { margin-bottom: 3mm; }
+.merits { margin-bottom: 3mm; }
+.merit-item { padding: 2.5mm 0; }
+.axis-block { margin-bottom: 3mm; }
+.schedule { margin-bottom: 3mm; }
+.pm-section { margin-bottom: 3mm; }
+.pm-more { font-size: 7.5pt; line-height: 1.6; margin-top: 2mm; }
+.partners-side-list li { padding: 1.5mm 0; font-size: 7.5pt; }
+.big-cta { padding: 4mm 6mm; }
+.big-cta-body { gap: 6mm; }
+
+/* page-back の最後 (BIG CTA) を確実にページ内に収める */
+.page-back > *:last-child { margin-bottom: 6mm; }
