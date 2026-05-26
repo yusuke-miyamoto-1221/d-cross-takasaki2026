@@ -3745,10 +3745,10 @@ footer .footer-akatsuki-link a:hover {
 .pm-photo img {
   object-position: center top;
 }
-/* 長谷川: 顔を少し縮小しつつ、ややズーム＆右寄せ */
+/* 長谷川: もう少しズーム＋もう少し右寄せ */
 .pm-card[data-pm="hasegawa"] .pm-photo img,
 .pm-modal-photo[data-pm="hasegawa"] img {
-  transform: scale(0.90);
-  transform-origin: 68% 28%;
+  transform: scale(0.96);
+  transform-origin: 75% 28%;
   object-position: center 28%;
 }
