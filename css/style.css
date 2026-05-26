@@ -3684,3 +3684,71 @@ footer .footer-akatsuki-link a:hover {
 
 /* 旧 consortium 系は不使用に */
 .consortium-section { display: none !important; }
+
+/* ===== SCHEDULE ENTRY: 募集・採択スケジュール recruit-table ===== */
+.recruit-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 10px;
+}
+.recruit-table td {
+  padding: 9px 8px;
+  border-bottom: 1px dashed var(--gray-border);
+  font-size: 12.5px;
+  vertical-align: middle;
+}
+.recruit-table tr:last-child td { border-bottom: none; }
+.recruit-table .recruit-label {
+  font-family: var(--font-ja);
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+  width: 130px;
+  letter-spacing: 0.03em;
+}
+.recruit-table .recruit-date {
+  font-family: var(--font-en);
+  font-weight: 700;
+  color: var(--dc-blue);
+  letter-spacing: 0.02em;
+}
+.recruit-table .recruit-conditional .recruit-label {
+  color: var(--text-light);
+  font-weight: 600;
+}
+.recruit-table .recruit-conditional .recruit-date {
+  color: var(--text-light);
+}
+.recruit-table .recruit-conditional .recruit-label::before {
+  content: '— ';
+  color: var(--gray);
+}
+.recruit-note {
+  font-size: 11.5px !important;
+  color: var(--text-light) !important;
+  font-weight: 500;
+  line-height: 1.75 !important;
+  padding-top: 8px;
+  border-top: 1px solid var(--gray-border);
+  margin-top: 6px;
+}
+
+/* APPLY ラベル（schedule-day-label の長文用） */
+.schedule-horizontal .schedule-day-label {
+  white-space: nowrap;
+}
+.schedule-day-label:not(.gray):not([class*="long"]) {
+  /* default colors keep */
+}
+
+/* ===== PM 写真: object-position center top（顔上部維持） ===== */
+.pm-photo img {
+  object-position: center top;
+}
+/* 長谷川: 顔を縮小表示（コンテナ内で画像を小さく＝顔が小さく見える） */
+.pm-card[data-pm="hasegawa"] .pm-photo img,
+.pm-modal-photo[data-pm="hasegawa"] img {
+  transform: scale(0.82);
+  transform-origin: center 28%;
+  object-position: center 28%;
+}
