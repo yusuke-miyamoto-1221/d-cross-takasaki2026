@@ -1308,6 +1308,45 @@ img { max-width: 100%; display: block; }
   margin-bottom: 3mm !important;
 }
 
+/* 表面 entry-block の右上に QR コード配置 */
+.entry-qr-side {
+  position: absolute;
+  top: 5mm;
+  right: 5mm;
+  width: 24mm;
+  text-align: center;
+  z-index: 2;
+}
+.entry-qr-side .qr-box {
+  width: 24mm;
+  height: 24mm;
+  background: var(--white);
+  border: 1px solid var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-en);
+  font-size: 8pt;
+  font-weight: 700;
+  color: var(--text-light);
+  letter-spacing: 0.1em;
+}
+.entry-qr-side .qr-label {
+  margin: 1mm 0 0;
+  font-family: var(--font-ja);
+  font-size: 7pt;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+/* QR と被らないよう entry-head と entry-list を右に余白 */
+.entry-block .entry-head { padding-right: 30mm !important; }
+.entry-block .entry-list { padding-right: 30mm !important; }
+@media (max-width: 100mm) {
+  .entry-block .entry-head, .entry-block .entry-list { padding-right: 0 !important; }
+}
+
 /* 「※予定」タグ（実施期間 終了日横） */
 .entry-tentative {
   display: inline-block;
