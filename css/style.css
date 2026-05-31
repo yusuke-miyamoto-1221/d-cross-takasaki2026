@@ -3805,3 +3805,10 @@ footer .footer-akatsuki-link a:hover {
   object-position: center top;
 }
 /* 長谷川: 新写真は構図が良好のため標準表示（特別な scale なし） */
+
+/* 鈴木: 元写真が顔に寄りすぎているため縮小して引いた構図に */
+.pm-card[data-pm="suzuki"] .pm-photo img,
+.pm-modal-photo[data-pm="suzuki"] img {
+  transform: scale(0.80);
+  transform-origin: center center;
+}

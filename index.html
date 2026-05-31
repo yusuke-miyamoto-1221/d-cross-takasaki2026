@@ -948,6 +948,7 @@ document.querySelectorAll('.pm-detail').forEach(function(link) {
       orgEl.appendChild(document.createTextNode(line));
     });
     var photoEl = document.getElementById('pmModalPhoto');
+    photoEl.setAttribute('data-pm', key);
     if (data.photo) {
       photoEl.innerHTML = '<img src="' + data.photo + '" alt="' + data.name + '">';
     } else {
