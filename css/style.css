@@ -3132,6 +3132,15 @@ footer .footer-akatsuki-link a:hover {
   margin-bottom: 18px;
   letter-spacing: 0.04em;
 }
+/* 1行表示用 modifier: デスクトップでは縮小して nowrap で1行強制、モバイルは通常 */
+@media (min-width: 901px) {
+  .merit-feature h5.h5-1line {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    line-height: 1.55;
+    white-space: nowrap;
+  }
+}
 .merit-feature h5 strong {
   background: var(--gradient);
   -webkit-background-clip: text;
