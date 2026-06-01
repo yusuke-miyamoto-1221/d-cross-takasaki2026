@@ -1729,22 +1729,28 @@ footer {
   text-align: right;
   flex-shrink: 0;
 }
+.footer-brand-logos {
+  max-width: 320px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
 .footer-brand-logo {
   max-width: 320px;
   width: 100%;
   height: auto;
   display: block;
-  margin-left: auto;
 }
 .footer-ntteast-logo {
   max-width: 200px;
   width: 100%;
   height: auto;
   display: block;
-  margin: 14px 0 12px auto;
 }
 .footer-operator-note {
-  margin: 0 0 0 auto;
+  margin: 14px 0 0 auto;
   max-width: 640px;
   font-size: 8pt;
   line-height: 1.7;
@@ -1753,7 +1759,9 @@ footer {
   letter-spacing: 0.02em;
 }
 @media (max-width: 900px) {
-  .footer-ntteast-logo { margin: 12px auto 10px 0; max-width: 180px; }
+  .footer-brand-logos { margin-left: 0; align-items: flex-start; max-width: 280px; }
+  .footer-brand-logo { max-width: 280px; }
+  .footer-ntteast-logo { max-width: 180px; }
   .footer-operator-note { text-align: left; margin-left: 0; max-width: 100%; }
 }
 .footer-bottom {
