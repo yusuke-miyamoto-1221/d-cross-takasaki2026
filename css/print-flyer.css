@@ -1254,13 +1254,18 @@ img { max-width: 100%; display: block; }
 .page-back .faq-flyer-item dt { font-size: 8pt !important; line-height: 1.4 !important; }
 .page-back .faq-flyer-item dd { font-size: 7.5pt !important; line-height: 1.45 !important; margin-top: 0.6mm !important; }
 .page-back .faq-flyer-note { margin-top: 1mm !important; font-size: 6.5pt !important; }
-.page-back .back-cta { margin: 2mm 0 2mm !important; padding: 2.5mm 4mm !important; }
-.page-back .back-cta-lead { font-size: 7pt !important; margin-bottom: 0.5mm !important; }
-.page-back .back-cta-main { font-size: 11pt !important; margin-bottom: 0.5mm !important; }
-.page-back .back-cta-sub { font-size: 7pt !important; }
-.page-back .back-cta-qr { width: 18mm !important; }
-.page-back .back-cta-qr .qr-box { width: 18mm !important; height: 18mm !important; font-size: 7pt !important; }
-.page-back .back-cta-qr .qr-label { font-size: 6pt !important; }
+.page-back .back-cta {
+  margin: 1.5mm auto 1.5mm !important;
+  padding: 1.8mm 4mm !important;
+  max-width: 130mm !important;
+  gap: 4mm !important;
+}
+.page-back .back-cta-lead { font-size: 6.5pt !important; margin-bottom: 0.3mm !important; }
+.page-back .back-cta-main { font-size: 10pt !important; margin-bottom: 0.3mm !important; }
+.page-back .back-cta-sub { font-size: 6.5pt !important; }
+.page-back .back-cta-qr { width: 14mm !important; }
+.page-back .back-cta-qr .qr-box { width: 14mm !important; height: 14mm !important; font-size: 6pt !important; }
+.page-back .back-cta-qr .qr-label { font-size: 5.5pt !important; }
 
 /* page-back の hosts-band（フッター）は表面と完全同一に：
    page-back の左右 padding (10mm) を負マージンで打ち消し、全幅で表示。
