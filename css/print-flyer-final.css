@@ -147,14 +147,19 @@
   padding-bottom: 0.3mm;
 }
 
-/* ===== 表面 KEY MESSAGE BOX 直上の運営者注記（8pt 左詰め） ===== */
-.page-front > .hero-operator-note {
-  margin: 2mm 9mm 1.5mm;
+/* ===== 表面 キービジュアル最下部にオーバーレイする運営者注記（8pt 左詰め） ===== */
+.page-front .hero .hero-operator-note {
+  position: absolute;
+  left: 9mm;
+  right: 9mm;
+  bottom: 2mm;
+  margin: 0;
+  z-index: 3;
   font-family: var(--font-ja);
   font-size: 8pt;
   font-weight: 500;
   color: var(--text);
-  line-height: 1.55;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
 }
