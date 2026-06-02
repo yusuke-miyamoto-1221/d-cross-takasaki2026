@@ -111,14 +111,14 @@
 .page-front .top-band {
   background: transparent !important;
   color: var(--text) !important;
-  padding: 3.5mm 46mm 3mm 9mm !important;
+  padding: 3.5mm 46mm 3mm 16mm !important;
   border-bottom: 1.2px solid var(--gray-border) !important;
   position: relative !important;
 }
 .page-front .top-band::before {
   content: '';
   position: absolute;
-  left: 9mm;
+  left: 16mm;
   bottom: 0;
   width: 60mm;
   height: 1.5pt;
