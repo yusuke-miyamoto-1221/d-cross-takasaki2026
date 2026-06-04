@@ -516,7 +516,7 @@ img { max-width: 100%; display: block; }
   border-top: 2px solid var(--gray-border);
 }
 .footer-meta {
-  padding: 8mm 22mm 52mm;
+  padding: 8mm 22mm 62mm;
   position: relative;
 }
 .footer-contact {
@@ -539,7 +539,7 @@ img { max-width: 100%; display: block; }
 .footer-akatsuki {
   position: absolute;
   right: 8mm;
-  bottom: 58mm;
+  bottom: 68mm;
   width: 56mm;
 }
 .footer-akatsuki img { width: 100%; }
