@@ -547,7 +547,7 @@ img { max-width: 100%; display: block; }
 /* 広告審査番号（8pt 例外・左詰め・通常フロー＋K26のみ視覚的に上へ） */
 .footer-ad-review {
   margin-top: 4mm;
-  transform: translateY(-8mm);
+  transform: translateY(-3mm);
   font-family: var(--font-en);
   font-size: 8pt;
   font-weight: 500;
