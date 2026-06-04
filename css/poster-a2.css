@@ -267,14 +267,13 @@ img { max-width: 100%; display: block; }
 }
 .keymsg-amount {
   display: inline-block;
-  background: var(--dc-yellow);
-  color: var(--black);
-  padding: 1.5mm 7mm;
-  border-radius: 1.8mm;
+  color: var(--dc-yellow);
+  padding: 0;
   font-weight: 900;
   font-size: 40pt;
-  margin: 0 3mm;
-  vertical-align: -3mm;
+  margin: 0 2mm;
+  vertical-align: baseline;
+  text-shadow: 0 0.5mm 0 rgba(0, 0, 0, 0.18);
 }
 .keymsg-amount-num {
   font-family: var(--font-en);
@@ -286,6 +285,7 @@ img { max-width: 100%; display: block; }
 .keymsg-amount-note {
   font-size: 16pt;
   font-weight: 600;
+  color: var(--white);
   margin-left: 3mm;
   vertical-align: middle;
 }
