@@ -30,6 +30,25 @@
 
 html { font-size: 12pt; }
 
+/* ================================================
+   印刷／PDF 出力時：1枚物 A2 でぴったり収める
+   ================================================ */
+@media print {
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: var(--white) !important;
+  }
+  .page.page-poster {
+    margin: 0 !important;
+    box-shadow: none !important;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    break-after: avoid;
+    break-inside: avoid;
+  }
+}
+
 body {
   font-family: var(--font-ja);
   color: var(--text);
