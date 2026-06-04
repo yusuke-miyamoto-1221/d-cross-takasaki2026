@@ -239,23 +239,6 @@ img { max-width: 100%; display: block; }
   font-weight: 900;
 }
 
-/* HERO 最下部の運営者注記（オーバーレイ・14pt 左詰め） */
-.hero .hero-operator-note {
-  position: absolute;
-  left: 24mm;
-  right: 24mm;
-  bottom: 5mm;
-  margin: 0;
-  z-index: 3;
-  font-family: var(--font-ja);
-  font-size: 14pt;
-  font-weight: 500;
-  color: var(--text);
-  line-height: 1.55;
-  letter-spacing: 0.02em;
-  text-align: left;
-}
-
 /* ====================================================
    KEY MESSAGE BOX
    ==================================================== */
@@ -524,7 +507,7 @@ img { max-width: 100%; display: block; }
 }
 .footer-akatsuki {
   position: absolute;
-  right: 22mm;
+  right: 8mm;
   bottom: 9mm;
   width: 56mm;
 }
