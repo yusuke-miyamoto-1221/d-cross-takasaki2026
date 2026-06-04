@@ -544,9 +544,12 @@ img { max-width: 100%; display: block; }
 }
 .footer-akatsuki img { width: 100%; }
 
-/* 広告審査番号（8pt 例外・左詰め） */
+/* 広告審査番号（8pt 例外・左詰め・絶対配置で単独に位置調整） */
 .footer-ad-review {
-  margin-top: 4mm;
+  position: absolute;
+  left: 22mm;
+  bottom: 38mm;
+  margin: 0;
   font-family: var(--font-en);
   font-size: 8pt;
   font-weight: 500;
