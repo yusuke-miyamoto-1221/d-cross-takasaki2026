@@ -140,10 +140,9 @@ img { max-width: 100%; display: block; }
 .hero {
   position: relative;
   flex-shrink: 0;
-  padding: 28mm 24mm 18mm;
+  padding: 24mm 24mm 2mm;
   background: linear-gradient(135deg, #faf8f3 0%, #f7f1e7 100%);
   overflow: hidden;
-  min-height: 260mm;
 }
 .hero-cross-bar {
   position: absolute;
@@ -245,7 +244,7 @@ img { max-width: 100%; display: block; }
 .keymsg {
   background: linear-gradient(135deg, #1757a5 0%, #962a5e 100%);
   color: var(--white);
-  padding: 14mm 30mm;
+  padding: 6mm 30mm 12mm;
   flex-shrink: 0;
 }
 .keymsg-inner { max-width: 380mm; margin: 0 auto; }
@@ -295,7 +294,7 @@ img { max-width: 100%; display: block; }
    ==================================================== */
 .entry-block {
   position: relative;
-  padding: 14mm 30mm 4mm;
+  padding: 8mm 30mm 4mm;
   flex: 1 1 auto;
   background: var(--bg-base);
 }
