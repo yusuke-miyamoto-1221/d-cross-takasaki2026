@@ -511,6 +511,7 @@ img { max-width: 100%; display: block; }
    ==================================================== */
 .hosts-band {
   flex-shrink: 0;
+  margin-top: auto;
   background: #f2efe9;
   border-top: 2px solid var(--gray-border);
 }
