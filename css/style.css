@@ -3231,7 +3231,7 @@ footer .footer-akatsuki-link a:hover {
   padding: 0;
   border-bottom: 2px solid var(--dc-blue);
   padding-bottom: 12px;
-  min-height: 72px;
+  min-height: 62px;
 }
 .schedule-horizontal .schedule-phase-num {
   position: relative;
@@ -3254,6 +3254,12 @@ footer .footer-akatsuki-link a:hover {
 .schedule-horizontal .schedule-phase-content p {
   font-size: 12px;
   letter-spacing: 0.02em;
+}
+/* デスクトップ：phase-content の説明文を1行強制（折返しによる段ずれ防止） */
+@media (min-width: 721px) {
+  .schedule-horizontal .schedule-phase-content p {
+    white-space: nowrap;
+  }
 }
 
 .schedule-phase-items {
