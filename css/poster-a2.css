@@ -198,31 +198,27 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.04em;
 }
 .hero-catch-main {
-  display: inline-block;
-  font-size: 54pt;
+  display: block;
+  font-size: 56pt;
   font-weight: 900;
   line-height: 1.2;
-  color: var(--white);
-  background: var(--gradient);
-  padding: 6mm 18mm;
-  border-radius: 2.5mm;
-  letter-spacing: 0.08em;
+  color: var(--black);
+  letter-spacing: 0.06em;
   margin-bottom: 0;
-  box-shadow: 0 3mm 8mm rgba(31, 111, 212, 0.22);
 }
 .q { color: inherit; }
 .hero-logo-wrap {
-  margin: 14mm auto 16mm;
+  margin: 16mm 0 18mm;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  padding-right: 4mm;
 }
 .hero-logo-img {
-  width: 320mm;
-  max-width: 92%;
+  width: 380mm;
+  max-width: 100%;
   height: auto;
-  margin: 0 auto;
   display: block;
 }
 .hero-tagline {
