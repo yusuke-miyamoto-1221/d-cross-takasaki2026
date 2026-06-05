@@ -111,6 +111,7 @@
 /* 表面のみ entry-block の margin-bottom が footer を 3mm 浮かせていたのを解消 */
 .page-front .entry-block {
   margin-bottom: 0 !important;
+  transform: translateY(-6mm);
 }
 
 /* ===== フッター全体を左寄せに調整（左padding削減、AKATSUKI も左へ） ===== */
