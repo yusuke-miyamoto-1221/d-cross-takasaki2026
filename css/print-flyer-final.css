@@ -210,18 +210,15 @@
   transform: translateY(3mm);
 }
 
-/* ===== 「最大100万円」右上の ※ マーカー（注釈参照記号） ===== */
-.page-front .keymsg-amount {
-  position: relative;
-}
+/* ===== 「円」右上の ※ マーカー（円文字に直接付与する superscript 方式） ===== */
 .page-front .keymsg-amount-mark {
-  position: absolute;
-  top: -1.5mm;
-  right: -3mm;
+  display: inline-block;
   font-size: 7pt;
   font-weight: 700;
   color: var(--dc-magenta);
   line-height: 1;
+  vertical-align: super;
+  margin-left: 0.3mm;
 }
 
 /* ===== 表面 KEY MESSAGE BOX 直下の支援金注釈（8pt 下限・濃色テキスト） ===== */
