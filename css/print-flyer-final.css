@@ -100,15 +100,20 @@
   top: 3.5mm;
 }
 
-/* ===== フッター AKATSUKI ロゴ位置調整：メールアドレス右側へ ===== */
+/* ===== フッター全体を左寄せに調整（左padding削減、AKATSUKI も左へ） ===== */
+.footer-meta {
+  padding-left: 5mm !important;
+  padding-right: 14mm !important;
+}
+/* AKATSUKI ロゴ：メールアドレス右側＋全体左寄せに合わせて少し左へ */
 .footer-meta .footer-akatsuki {
   top: 2mm !important;
   bottom: auto !important;
-  right: 3mm !important;
+  right: 8mm !important;
   transform: none !important;
   width: 16mm !important;
 }
-/* 問い合わせ先は一行表示（途中で折り返さない）。AKATSUKI ロゴは右端で待機 */
+/* 問い合わせ先は一行表示（途中で折り返さない） */
 .footer-meta .footer-contact {
   white-space: nowrap !important;
   padding-right: 18mm;
