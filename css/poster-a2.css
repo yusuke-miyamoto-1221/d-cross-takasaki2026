@@ -172,7 +172,7 @@ img { max-width: 100%; display: block; }
 .hero {
   position: relative;
   flex-shrink: 0;
-  padding: 24mm 24mm 28mm;
+  padding: 24mm 24mm 16mm;
   background: linear-gradient(135deg, #faf8f3 0%, #f7f1e7 100%);
   overflow: hidden;
 }
@@ -276,7 +276,7 @@ img { max-width: 100%; display: block; }
 .keymsg {
   background: linear-gradient(135deg, #1757a5 0%, #962a5e 100%);
   color: var(--white);
-  padding: 18mm 30mm 12mm;
+  padding: 12mm 30mm 12mm;
   flex-shrink: 0;
 }
 .keymsg-inner { max-width: 380mm; margin: 0 auto; }

@@ -100,11 +100,17 @@
   top: 3.5mm;
 }
 
-/* ===== フッター AKATSUKI ロゴ位置調整 ===== */
+/* ===== フッター AKATSUKI ロゴ位置調整：メールアドレス右側へ ===== */
 .footer-meta .footer-akatsuki {
-  top: auto !important;
-  bottom: 3.5mm !important;
+  top: 2mm !important;
+  bottom: auto !important;
+  right: 6mm !important;
   transform: none !important;
+  width: 18mm !important;
+}
+/* AKATSUKI ロゴと被らないよう、問い合わせ先行に右側余白を確保 */
+.footer-meta .footer-contact {
+  padding-right: 22mm;
 }
 
 /* ===== 表面 TOP BAND: 黒ラベル廃止・ブランドカラー強調 ===== */
@@ -188,15 +194,17 @@
   transform: translateY(3mm);
 }
 
-/* ===== 表面 KEY MESSAGE BOX 直下の支援金注釈（8pt 下限） ===== */
+/* ===== 表面 KEY MESSAGE BOX 直下の支援金注釈（8pt 下限・濃色テキスト） ===== */
 .page-front .keymsg-inner .keymsg-note {
   margin: 1.5mm 0 0 !important;
+  padding-top: 1.5mm;
+  border-top: 1px dashed var(--gray-border);
   font-family: var(--font-ja);
   font-size: 8pt !important;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.92);
+  color: var(--text-light);
   text-align: left;
 }
 
