@@ -228,6 +228,25 @@
   display: none !important;
 }
 
+/* ===== 表面 HERO content を少し下方向にシフト（padding-top 増） ===== */
+.page-front .hero {
+  padding-top: 14mm !important;
+}
+
+/* ===== 表面 AKATSUKI ロゴを拡大＋下方向。footer-note は被らないよう右パディング確保 ===== */
+.page-front .footer-meta .footer-akatsuki {
+  width: 28mm !important;
+  top: 7mm !important;
+}
+.page-front .footer-meta .footer-note {
+  padding-right: 34mm;
+}
+
+/* ===== 裏面：問い合わせ先 + AKATSUKI ロゴ + K26 を均等に1行分下へ ===== */
+.page-back .footer-meta {
+  padding-top: 7mm !important;
+}
+
 /* ===== 裏面のみ：footer-note は文字のみ非表示・配置は維持 ===== */
 .page-back .footer-meta .footer-note {
   visibility: hidden !important;
