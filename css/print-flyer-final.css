@@ -235,17 +235,8 @@
 /* hero-catch-main / sub の位置・サイズはクラスのまま、テキストを HTML 側で入れ替え */
 .page-front .hero-catch-main {
   transform: none;
-  font-size: 22pt !important;  /* 34pt → 22pt（高崎発…のはみ出し回避） */
-  white-space: normal !important;
-}
-.page-front .hero-catch-sub {
-  transform: none;
-  /* タグラインと同じフォント設定に合わせる */
-  font-family: var(--font-ja) !important;
-  font-weight: 500 !important;
-  font-size: 11pt !important;
-  letter-spacing: 0.06em !important;
-  line-height: 1.7 !important;
+  font-size: 22pt !important;       /* 34pt → 22pt（HERO幅内に収まるサイズ） */
+  white-space: nowrap !important;   /* 1行強制 */
 }
 /* D-CROSS ロゴを 1.5倍に拡大（キービジュアル外枠は変えず、ロゴ自体のみ拡大） */
 .page-front .hero-logo-img {
