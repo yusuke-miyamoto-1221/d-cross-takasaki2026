@@ -300,13 +300,22 @@
   line-height: 1.5 !important;
 }
 
-/* ===== 裏面：footer-contact 内のインライン D-CROSS ロゴ ===== */
+/* ===== 裏面：footer-contact レイアウト – テキスト塊とロゴを横並びに ===== */
+.page-back .footer-meta .footer-contact {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: nowrap;
+}
+.page-back .footer-meta .footer-contact .footer-contact-text {
+  display: inline-block;
+  flex: 0 0 auto;
+}
 .page-back .footer-meta .footer-contact .footer-inline-logo {
   display: inline-block;
-  height: 15mm;        /* 10mm → 15mm（1.5倍拡大） */
+  flex: 0 0 auto;
+  height: 15mm;
   width: auto;
-  vertical-align: middle;
-  margin-left: 11mm;   /* 7mm → 11mm（少し右） */
+  margin-left: 8mm;     /* 11mm → 8mm（ほんの少し左へ） */
 }
 
 /* ===== 裏面：K26 ad-review をさらに上方向へ ===== */
