@@ -237,7 +237,7 @@
   transform: translateY(-5mm);
   font-size: 22pt !important;       /* 34pt → 22pt（HERO幅内に収まるサイズ） */
   white-space: nowrap !important;   /* 1行強制 */
-  margin-left: 17mm !important;     /* 10mm → 17mm（1文字分右） */
+  margin-left: 13.5mm !important;   /* 17mm → 13.5mm（0.5文字分左） */
 }
 /* D-CROSS ロゴ（クロスマーク無し SVG）：もう少し縮小 + 右にシフト + 下方向 */
 .page-front .hero-logo-img {
@@ -303,15 +303,20 @@
 /* ===== 裏面：footer-contact 内のインライン D-CROSS ロゴ ===== */
 .page-back .footer-meta .footer-contact .footer-inline-logo {
   display: inline-block;
-  height: 10mm;        /* 14mm → 10mm（縮小・K26 が見切れないように） */
+  height: 15mm;        /* 10mm → 15mm（1.5倍拡大） */
   width: auto;
   vertical-align: middle;
-  margin-left: 7mm;
+  margin-left: 11mm;   /* 7mm → 11mm（少し右） */
 }
 
-/* ===== 表面 HERO タグライン: 視覚的に3行分下方向へ（他配置は不変） ===== */
+/* ===== 裏面：K26 ad-review をさらに上方向へ ===== */
+.page-back .footer-meta .footer-ad-review {
+  transform: translateY(-9mm);
+}
+
+/* ===== 表面 HERO タグライン: 視覚的に3行分下方向 + 1文字分右へ（他配置は不変） ===== */
 .page-front .hero-tagline {
-  transform: translateY(18mm);
+  transform: translate(7mm, 18mm);
 }
 
 /* ===== 「円」右上の ※ マーカー（円文字に直接付与する superscript 方式） ===== */
