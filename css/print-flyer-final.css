@@ -234,14 +234,14 @@
 }
 /* hero-catch-main / sub の位置・サイズはクラスのまま、テキストを HTML 側で入れ替え */
 .page-front .hero-catch-main {
-  transform: none;
+  transform: translateY(-5mm);
   font-size: 22pt !important;       /* 34pt → 22pt（HERO幅内に収まるサイズ） */
   white-space: nowrap !important;   /* 1行強制 */
   margin-left: 10mm !important;     /* 少し右へオフセット */
 }
-/* D-CROSS ロゴ（クロスマーク無し SVG）：1.5倍 + 若干左 + 下方向へ */
+/* D-CROSS ロゴ（クロスマーク無し SVG）：縮小 + 若干左 + 下方向へ */
 .page-front .hero-logo-img {
-  max-width: 138mm !important;       /* 92mm → 138mm（1.5倍） */
+  max-width: 116mm !important;       /* 138 → 116mm（少し縮小） */
 }
 .page-front .hero-logo-wrap {
   margin-left: 0 !important;         /* 既存 8mm → 0（左へ） */
