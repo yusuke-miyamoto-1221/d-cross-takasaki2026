@@ -3688,8 +3688,12 @@ footer .footer-akatsuki-link a:hover {
   .pm-grid-six { grid-template-columns: repeat(2, 1fr); gap: 32px 20px; }
 }
 @media (max-width: 540px) {
-  .pm-grid-six { grid-template-columns: 1fr; gap: 36px; }
-  .pm-num { font-size: 26px; }
+  .pm-grid-six { grid-template-columns: repeat(2, 1fr); gap: 28px 12px; }
+  .pm-grid-six .pm-photo { width: 100px; height: 100px; }
+  .pm-num { font-size: 22px; }
+  .pm-grid-six .pm-card .pm-name { font-size: 14px; }
+  .pm-grid-six .pm-card .pm-name-en { font-size: 11px; }
+  .pm-grid-six .pm-card .pm-org { font-size: 11px; }
 }
 
 /* PMセクション説明文の強調語をグラデで */
