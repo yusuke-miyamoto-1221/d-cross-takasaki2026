@@ -3736,9 +3736,9 @@ footer .footer-akatsuki-link a:hover {
 }
 .partnership-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
   gap: 28px;
-  max-width: 840px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 .partnership-card {
@@ -3792,6 +3792,19 @@ footer .footer-akatsuki-link a:hover {
 .partnership-card-link:hover {
   color: var(--dc-magenta);
   border-bottom-color: var(--dc-magenta);
+}
+/* 6カラム グリッドで各カード 2カラム分 = 3列レイアウト */
+.partnership-card { grid-column: span 2; }
+/* 5枚配置の場合、下段（4枚目・5枚目）を中央に寄せる：3-2 構成 */
+.partnership-card:nth-child(4) { grid-column: 2 / span 2; }
+.partnership-card:nth-child(5) { grid-column: 4 / span 2; }
+
+@media (max-width: 980px) {
+  /* タブレット：2列に降格、下段中央寄せ解除 */
+  .partnership-cards { grid-template-columns: repeat(2, 1fr); }
+  .partnership-card,
+  .partnership-card:nth-child(4),
+  .partnership-card:nth-child(5) { grid-column: auto; }
 }
 @media (max-width: 720px) {
   .partnership-cards { grid-template-columns: 1fr; gap: 20px; }
