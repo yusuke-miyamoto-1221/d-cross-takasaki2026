@@ -3861,6 +3861,16 @@ footer .footer-akatsuki-link a:hover {
   border-top: 1px solid var(--gray-border);
   margin-top: 6px;
 }
+.recruit-table .recruit-date-subnote {
+  display: block;
+  font-family: var(--font-ja);
+  font-size: 10.5px;
+  font-weight: 400;
+  color: var(--text-light);
+  margin-top: 4px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
 
 /* APPLY ラベル（schedule-day-label の長文用） */
 .schedule-horizontal .schedule-day-label {
