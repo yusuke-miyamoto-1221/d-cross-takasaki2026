@@ -4091,3 +4091,185 @@ footer .footer-akatsuki-link a:hover {
   .entry-coming-soon { padding: 28px 24px; }
   .entry-coming-soon-date { font-size: 18px; }
 }
+
+/* =====================================================================
+   1次募集 CLOSED / DISABLED 状態（募集終了後）
+   ===================================================================== */
+
+/* ----- Header / Mobile-nav ENTRY (disabled) ----- */
+.header-entry-disabled {
+  background: transparent !important;
+  color: #9c9c9c !important;
+  border-color: #9c9c9c !important;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.header-entry-disabled:hover {
+  background: transparent !important;
+  color: #9c9c9c !important;
+}
+.mobile-nav-cta .header-entry-disabled {
+  background: transparent !important;
+  border-color: #9c9c9c !important;
+  color: #9c9c9c !important;
+  box-shadow: none !important;
+}
+.header-entry-disabled::before {
+  color: #9c9c9c !important;
+}
+
+/* ----- HERO / CONSORTIUM 下 CTA (closed) ----- */
+.dc-cta-closed {
+  cursor: default;
+  pointer-events: none;
+}
+.dc-cta-closed:hover {
+  transform: none;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+.dc-cta-closed .dc-cta-status-dot {
+  background: #9c9c9c !important;
+  box-shadow: none !important;
+  animation: none !important;
+}
+.dc-cta-closed .dc-cta-status-label { color: #9c9c9c !important; }
+.dc-cta-closed .dc-cta-progress-stage { color: #9c9c9c !important; }
+.dc-cta-closed .dc-cta-progress-fill { background: #9c9c9c !important; }
+.dc-cta-closed .dc-cta-info-label,
+.dc-cta-closed .dc-cta-info-date,
+.dc-cta-closed .dc-cta-info-date .dow,
+.dc-cta-closed .dc-cta-time { color: #9c9c9c !important; }
+
+.dc-cta-action-disabled {
+  background: #9c9c9c !important;
+  color: #fff !important;
+  cursor: not-allowed;
+  box-shadow: none !important;
+  pointer-events: none;
+  justify-content: center;
+}
+.dc-cta-action-disabled::before,
+.dc-cta-action-disabled::after { display: none !important; }
+.dc-cta-action-disabled .dc-cta-action-label { color: #fff !important; }
+
+/* ----- ENTRY ページ (closed) ----- */
+.entry-page .entry-desc-closed { color: #9c9c9c; }
+.entry-page .entry-desc-closed strong { color: #6a6a6a; }
+
+/* ----- NEWS 子ページリンク（closed 中も視認可） ----- */
+.news-item p a {
+  color: var(--red);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.news-item p a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.entry-cta-btn-disabled {
+  background: #9c9c9c !important;
+  color: #fff !important;
+  cursor: not-allowed;
+  box-shadow: none !important;
+  pointer-events: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.entry-cta-btn-disabled:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* ----- NOTICE PAGE (メンテナンス告知等) ----- */
+.notice-page {
+  min-height: calc(100vh - 80px);
+  padding: 140px 24px 100px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f8fd 100%);
+}
+.notice-page-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.notice-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.notice-date {
+  font-family: var(--font-en);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-light);
+  letter-spacing: 0.04em;
+}
+.notice-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border: 1px solid var(--red);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--red);
+  letter-spacing: 0.05em;
+}
+.notice-title {
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--red);
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+.notice-divider {
+  height: 2px;
+  background: var(--red);
+  margin-bottom: 48px;
+  opacity: 0.7;
+}
+.notice-body {
+  font-size: 16px;
+  color: var(--text);
+  line-height: 2.0;
+}
+.notice-body p {
+  margin-bottom: 20px;
+}
+.notice-schedule {
+  margin: 36px 0;
+  padding: 24px 28px;
+  background: var(--red-light);
+  border-left: 4px solid var(--red);
+  border-radius: 6px;
+}
+.notice-schedule h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+.notice-schedule-main {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 8px !important;
+  letter-spacing: 0.02em;
+}
+.notice-schedule-note {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: 0 !important;
+}
+.notice-back {
+  text-align: center;
+  margin-top: 80px;
+}
+@media (max-width: 540px) {
+  .notice-page { padding: 100px 16px 64px; }
+  .notice-title { font-size: 24px; }
+  .notice-body { font-size: 14px; line-height: 1.9; }
+  .notice-schedule { padding: 18px 20px; margin: 28px 0; }
+  .notice-schedule-main { font-size: 17px; }
+}
