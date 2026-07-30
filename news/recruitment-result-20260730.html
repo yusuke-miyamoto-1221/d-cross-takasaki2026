@@ -3,23 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ENTRY | D-CROSS TAKASAKI 2026</title>
-  <meta name="description" content="D-CROSS TAKASAKI 2026 エントリーページ。1次募集（締切 2026年7月10日（金）12:00）の受付は終了いたしました。たくさんのご応募をありがとうございました。">
+
+  <!-- Content Security Policy (XSS 防御) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com https://i.ytimg.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src https://docs.google.com https://www.youtube.com https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'none'">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>10プロジェクト採択決定および2次募集未実施のお知らせ | D-CROSS TAKASAKI 2026</title>
+  <meta name="description" content="D-CROSS TAKASAKI 2026 1次募集で10プロジェクトの採択が決定し、2次募集は実施しないことをお知らせいたします。">
 
   <!-- favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="ENTRY | D-CROSS TAKASAKI 2026">
-  <meta property="og:description" content="D-CROSS TAKASAKI 2026 1次募集（締切 2026年7月10日（金）12:00）の受付は終了いたしました。">
+  <meta property="og:title" content="10プロジェクト採択決定および2次募集未実施のお知らせ | D-CROSS TAKASAKI 2026">
+  <meta property="og:description" content="1次募集で10プロジェクトの採択が決定し、2次募集は実施しないことをお知らせいたします。">
   <meta property="og:image" content="https://d-cross-takasaki.com/assets/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/png">
-  <meta property="og:url" content="https://d-cross-takasaki.com/entry.html">
-  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://d-cross-takasaki.com/news/recruitment-result-20260730.html">
+  <meta property="og:type" content="article">
   <meta property="og:site_name" content="D-CROSS TAKASAKI 2026">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
@@ -28,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@500;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 
   <!-- Google tag (gtag.js) — D-CROSS TAKASAKI 2026 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DREE8GZGRT"></script>
@@ -47,18 +53,18 @@
 
 <!-- HEADER -->
 <header>
-  <a href="index.html" class="header-logo">
-    <img src="assets/images/logo-d-cross.svg" alt="D-CROSS TAKASAKI 2026" class="header-logo-img">
+  <a href="../index.html" class="header-logo">
+    <img src="../assets/images/logo-d-cross.svg" alt="D-CROSS TAKASAKI 2026" class="header-logo-img">
   </a>
   <button class="nav-toggle" id="navToggle" aria-label="メニュー"><span></span><span></span><span></span></button>
   <div class="header-right">
     <nav>
       <ul>
-        <li><a href="index.html#program">PROGRAM</a></li>
-        <li><a href="index.html#concept">CONCEPT</a></li>
-        <li><a href="index.html#schedule">SCHEDULE</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="../index.html#program">PROGRAM</a></li>
+        <li><a href="../index.html#concept">CONCEPT</a></li>
+        <li><a href="../index.html#schedule">SCHEDULE</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+        <li><a href="../contact.html">CONTACT</a></li>
       </ul>
     </nav>
     <span class="header-entry header-entry-disabled" aria-disabled="true">ENTRY</span>
@@ -68,32 +74,40 @@
 <!-- MOBILE NAV -->
 <div class="mobile-nav" id="mobileNav">
   <ul>
-    <li><a href="index.html#program">PROGRAM</a></li>
-    <li><a href="index.html#concept">CONCEPT</a></li>
-    <li><a href="index.html#schedule">SCHEDULE</a></li>
-    <li><a href="faq.html">FAQ</a></li>
-    <li><a href="contact.html">CONTACT</a></li>
+    <li><a href="../index.html#program">PROGRAM</a></li>
+    <li><a href="../index.html#concept">CONCEPT</a></li>
+    <li><a href="../index.html#schedule">SCHEDULE</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../contact.html">CONTACT</a></li>
   </ul>
   <div class="mobile-nav-cta">
     <span class="header-entry header-entry-disabled" aria-disabled="true">ENTRY</span>
   </div>
 </div>
 
-<!-- ENTRY -->
-<section class="entry-page">
-  <div class="entry-page-inner">
-    <div class="section-heading fade-in">
-      <span class="section-heading-en">ENTRY</span>
-      <p class="section-heading-ja">エントリー</p>
+<!-- NOTICE -->
+<section class="notice-page">
+  <div class="notice-page-inner">
+    <div class="notice-meta fade-in">
+      <span class="notice-date">2026.07.30</span>
     </div>
-    <p class="entry-desc entry-desc-closed fade-in">1次募集締切：<strong>2026年7月10日（金）12:00</strong><br>受付を終了いたしました。</p>
-    <div class="entry-cta-wrap fade-in">
-      <span class="entry-cta-btn entry-cta-btn-disabled" aria-disabled="true">
-        募集は締め切りました
-      </span>
+    <h1 class="notice-title fade-in">10プロジェクト採択決定および<br>2次募集未実施のお知らせ</h1>
+    <div class="notice-divider fade-in"></div>
+
+    <div class="notice-body fade-in">
+      <p>このたびは、D-CROSS TAKASAKI 2026 の1次募集に多数のご応募をいただき、誠にありがとうございました。</p>
+
+      <div class="notice-schedule">
+        <h2>■ お知らせ</h2>
+        <p class="notice-schedule-main">1次募集で定員10プロジェクトの採択が決定したため、<br>2次募集は実施いたしません。</p>
+      </div>
+
+      <p>ご応募いただいた皆さまには、事務局一同、心より御礼申し上げます。惜しくも採択に至らなかった皆さまへは、これまでのご検討・ご準備に深く感謝申し上げます。</p>
+      <p>今後も本プログラムを通じて、若手人材の挑戦を支援してまいります。引き続きご注目・ご支援のほど、よろしくお願い申し上げます。</p>
     </div>
-    <div class="entry-back fade-in">
-      <a href="index.html" class="entry-back-btn">トップへ戻る</a>
+
+    <div class="notice-back fade-in">
+      <a href="../index.html" class="entry-back-btn">トップへ戻る</a>
     </div>
   </div>
 </section>
@@ -106,19 +120,19 @@
       <p class="footer-office-name">D-CROSS TAKASAKI プログラム事務局</p>
       <p class="footer-office-label">〈 主催・事務局運営 〉NTT東日本グループ</p>
       <p class="footer-office-mail">Mail：<a href="mailto:d-cross2026-ml@east.ntt.co.jp">d-cross2026-ml@east.ntt.co.jp</a></p>
-      <p class="footer-office-link">お問い合わせは <a href="contact.html">CONTACT</a> ページよりお願いいたします。</p>
+      <p class="footer-office-link">お問い合わせは <a href="../contact.html">CONTACT</a> ページよりお願いいたします。</p>
     </div>
     <div class="footer-brand">
       <div class="footer-brand-logos">
-        <img src="assets/images/logo-d-cross.svg" alt="D-CROSS TAKASAKI 2026" class="footer-brand-logo">
-        <img src="assets/images/NTT_EAST_logo.png" alt="NTT東日本" class="footer-ntteast-logo">
+        <img src="../assets/images/logo-d-cross.svg" alt="D-CROSS TAKASAKI 2026" class="footer-brand-logo">
+        <img src="../assets/images/NTT_EAST_logo.png" alt="NTT東日本" class="footer-ntteast-logo">
       </div>
       <p class="footer-operator-note">「D-CROSS TAKASAKI 2026」は、経済産業省 令和7年度 地方の若手人材発掘育成支援事業費補助金<br>「AKATSUKIプロジェクト」採択補助事業として、補助事業者であるNTT東日本株式会社が運営しています。</p>
     </div>
   </div>
   <div class="footer-bottom">
     <p class="footer-akatsuki-logo">
-      <img src="assets/images/akatsuki_logotype.png" alt="AKATSUKIプロジェクト" class="footer-akatsuki-img">
+      <img src="../assets/images/akatsuki_logotype.png" alt="AKATSUKIプロジェクト" class="footer-akatsuki-img">
     </p>
     <p class="footer-akatsuki-link">「AKATSUKIプロジェクト」の詳細は<a href="https://mitouteki.jp/" target="_blank" rel="noopener">こちら</a>から</p>
   </div>
@@ -150,7 +164,7 @@ if (fadeEls.length) {
   fadeEls.forEach(function(el) { obs.observe(el); });
 }
 
-// custom cursor (dot + lerp ring)
+// custom cursor
 (function() {
   var dot = document.getElementById('cursorDot');
   var ring = document.getElementById('cursorRing');
