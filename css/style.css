@@ -4276,10 +4276,109 @@ footer .footer-akatsuki-link a:hover {
   text-align: center;
   margin-top: 80px;
 }
+
+/* ----- 採択プロジェクト一覧（お知らせページ内） ----- */
+.notice-projects {
+  margin: 40px 0 36px;
+}
+.notice-projects-head {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+.notice-project-list {
+  list-style: none;
+  counter-reset: notice-pj;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+.notice-project {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 16px 20px;
+  background: #fff;
+  border: 1px solid var(--gray-border);
+  border-left: 3px solid var(--red);
+  border-radius: 6px;
+}
+.notice-project::before {
+  counter-increment: notice-pj;
+  content: counter(notice-pj, decimal-leading-zero);
+  flex: 0 0 auto;
+  font-family: var(--font-en);
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--red);
+  letter-spacing: 0.04em;
+  padding-top: 3px;
+}
+.notice-project-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.notice-project-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  margin-bottom: 6px !important;
+  word-break: keep-all;
+  line-break: strict;
+  overflow-wrap: anywhere;
+}
+.notice-project-person {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 0 !important;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.notice-project-affil {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 10px;
+  background: var(--red-light);
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--red);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.notice-projects-note {
+  font-size: 12px !important;
+  color: var(--text-light) !important;
+  line-height: 1.7 !important;
+  margin: 14px 0 0 !important;
+}
+
 @media (max-width: 540px) {
   .notice-page { padding: 100px 16px 64px; }
   .notice-title { font-size: 24px; }
   .notice-body { font-size: 14px; line-height: 1.9; }
   .notice-schedule { padding: 18px 20px; margin: 28px 0; }
   .notice-schedule-main { font-size: 17px; }
+  .notice-projects { margin: 30px 0 26px; }
+  .notice-projects-head { font-size: 15px; margin-bottom: 12px; }
+  .notice-project { gap: 12px; padding: 14px 16px; }
+  .notice-project::before { font-size: 12px; }
+  .notice-project-name { font-size: 13.5px; line-height: 1.6; }
+  .notice-project-person { font-size: 12.5px; }
+  .notice-project-affil {
+    display: block;
+    margin-left: 0;
+    margin-top: 6px;
+    width: fit-content;
+    max-width: 100%;
+    white-space: normal;
+  }
 }
